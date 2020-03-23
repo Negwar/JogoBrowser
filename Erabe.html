@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Erabe</title>
+        <style>        </style>
+        <center>
+            <h1>Você aparece em uma arena, sem nenhuma lembrança da sua vida.
+            A única lembrança é que um homem alto e careca lhe jogou aqui.
+            Olhando para frente você encontra um homem com um arco prestes a disparar.
+            Você tem por perto uma espada e um escudo, qual você decide pegar?
+            </h1>
+            <img src="imagens/espada.jpg" alt="Espada" id="espada" height="300" width="300">
+            <img src="imagens/escudo.jpg" alt="Escudo" id="escudo" height="300" width="300">
+        </center>
+    </head>
+    <body>
+        
+        <script>
+            var escolha, altura, largura;
+
+            altura = window.innerHeight;
+            largura = window.innerWidth;
+
+            if(largura>=500) {
+                largura = 600;
+                altura = 600;
+            }
+
+            if(escolha=espada){
+                document.querySelector("#espada").onclick = function(){alert('Você não se defende da flecha e ela crava no seu peito, a dor é excruciante, mas você n solta a espada');}
+            }if(escolha=escudo){
+                document.querySelector("#escudo").onclick = function(){alert('Você defende a flecha');}
+            }
+
+
+        </script>
+    </body>
+<html>
